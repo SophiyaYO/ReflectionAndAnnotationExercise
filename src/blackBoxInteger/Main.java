@@ -15,7 +15,7 @@ public class Main {
 
             constructor.setAccessible(true);
 
-            constructor.newInstance()
+            constructor.newInstance();
 
         } catch (NoSuchMethodException |
                 IllegalAccessException |
