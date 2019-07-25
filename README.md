@@ -113,3 +113,40 @@ For each command you must print the fields that have the given access modifier a
 [:baby_bottle: **SOLUTION**](https://github.com/SophiyaYO/ReflectionAndAnnotationExercise/tree/master/src/harvestingFields)
 
 </details>
+
+<details>
+<summary>Problem 2.	Black Box Integer</summary>
+
+You are helping a buddy of yours who is still in the OOP Basics course - his name is Peshoslav (not to be mistaken with real people or trainers). He is rather slow and made a class with all private members. Your tasks are to instantiate an object from his class (always with start value 0) and then invoke the different methods it has. Your restriction is to not change anything in the class itself (consider it a black box). You can look at his class but don't touch anything! The class itself is called BlackBoxInt. It is a wrapper for the int primitive. The methods it has are:
+
+![methodsIn](src/blackBoxInteger/methods.png)
+
+**Input**
+
+The input will consist of lines in the form:
+
+>"**\<command name>_\<value>"**
+
+**Example:** _add_115_
+
+Input will always be valid and in the format described, so there is no need to check it explicitly. You stop receiving input when you encounter the command "END".
+
+**Output**
+
+Each command \(except the END one) should print the current value of innerValue of the BlackBoxInt object you instantiated. Don't cheat by overriding toString in the class - you must get the value from the private field.
+
+**Examples**
+
+Input | Output
+---              | ---
+add_999999 | 999999
+subtract_19 | 999980
+divide_4 | 249995
+multiply_2 | 499990
+rightShift_1 | 249995
+leftShift_3 | 1999960
+END |
+
+[:sos: **SOLUTION**](src/blackBoxInteger/)
+
+</details>
