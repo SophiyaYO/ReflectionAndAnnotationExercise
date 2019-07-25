@@ -24,7 +24,7 @@ You will receive a maximum of 100 lines with one of the following commands:
 
 For each command you must print the fields that have the given access modifier as described in the input section. The format in which the fields should be printed is:
 
->**"<access modifier> <field type> <field name>"**
+>**"\<access modifier> \<field type> \<field name>"**
 
 **Examples**
 
