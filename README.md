@@ -110,4 +110,6 @@ For each command you must print the fields that have the given access modifier a
 |  | protected Stream moarStreamz |
 |  | private Stream secretStream |
 
+[:baby_bottle: **SOLUTION**](https://github.com/SophiyaYO/ReflectionAndAnnotationExercise/tree/master/src/harvestingFields)
+
 </details>
