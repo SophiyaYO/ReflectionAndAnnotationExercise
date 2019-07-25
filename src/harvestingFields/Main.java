@@ -29,6 +29,7 @@ public class Main {
                             )));
 
                     break;
+
                 case "protected":
                     Arrays.stream(fields)
                             .filter(field -> Modifier.isProtected(field.getModifiers()))
@@ -40,13 +41,29 @@ public class Main {
                                                     field.getName()
                                             )));
                     break;
+
                 case "public":
-
+                    Arrays.stream(fields)
+                            .filter(field -> Modifier.isPublic(field.getModifiers()))
+                            .forEach(field ->
+                                    System.out.println(
+                                            String.format(
+                                                    "public %s %s",
+                                                    field.getType().getSimpleName(),
+                                                    field.getName()
+                                            )));
                     break;
-                case "all":
 
-                    break;
                 default:
+                    Arrays.stream(fields)
+                            .forEach(field ->
+                                    System.out.println(
+                                            String.format(
+                                                    "%s %s %s",
+                                                    Modifier.toString(field.getModifiers()),
+                                                    field.getType().getSimpleName(),
+                                                    field.getName()
+                                            )));
                     break;
 
 
