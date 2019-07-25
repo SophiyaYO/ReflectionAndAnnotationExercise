@@ -2,3 +2,4 @@
 out/
 *.class
 src/barracksWars/core/commands/
+/.idea/workspace.xml

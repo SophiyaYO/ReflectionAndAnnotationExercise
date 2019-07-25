@@ -1,37 +1,59 @@
 package harvestingFields;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-		String input = scanner.nextLine();
+        String input = scanner.nextLine();
 
-		Field[] fields = RichSoilLand.class.getDeclaredFields();
+        Field[] fields = RichSoilLand.class.getDeclaredFields();
 
-		while (!input.equals("HARVEST")) {
+        while (!input.equals("HARVEST")) {
 
-			switch (input) {
-				case "private ":
+            switch (input) {
 
-					break;
-				case "protected ":
+                case "private":
+                    Arrays.stream(fields)
+                            .filter(field -> Modifier.isPrivate(field.getModifiers()))
+                            .forEach(field ->
+                                    System.out.println(
+                                    String.format(
+                                    "private %s %s",
+                                    field.getType().getSimpleName(),
+                                    field.getName()
+                            )));
 
-					break;
-				case "public ":
+                    break;
+                case "protected":
+                    Arrays.stream(fields)
+                            .filter(field -> Modifier.isProtected(field.getModifiers()))
+                            .forEach(field ->
+                                    System.out.println(
+                                            String.format(
+                                                    "protected %s %s",
+                                                    field.getType().getSimpleName(),
+                                                    field.getName()
+                                            )));
+                    break;
+                case "public":
 
-					break;
-				case "all ":
+                    break;
+                case "all":
 
-					break;
+                    break;
+                default:
+                    break;
 
 
-			}
+            }
 
-			input = scanner.nextLine();
-		}
+            input = scanner.nextLine();
+        }
 
-	}
+    }
 }
