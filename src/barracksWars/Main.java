@@ -8,7 +8,7 @@ import barracksWars.core.factories.UnitFactoryImpl;
 import barracksWars.data.UnitRepository;
 
 public class Main {
-
+//just testing commits with terminal
     public static void main(String[] args) {
         Repository repository = new UnitRepository();
         UnitFactory unitFactory = new UnitFactoryImpl();
