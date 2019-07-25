@@ -1,5 +1,6 @@
 .DS_Store
 out/
 *.class
+.xml
 src/barracksWars/core/commands/
 /.idea/workspace.xml
