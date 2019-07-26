@@ -47,5 +47,13 @@ public class UnitRepository implements Repository {
         if (this.amountOfUnits.containsKey(unitType)) {
             throw new IllegalArgumentException("No such units in repository.");
         }
+
+        int oldCount = this.amountOfUnits.get(unitType) - 1;
+
+        if (oldCount == 0) {
+            this.amountOfUnits.remove(unitType);
+        } else {
+            this.amountOfUnits.put(unitType, oldCount);
+        }
     }
 }
