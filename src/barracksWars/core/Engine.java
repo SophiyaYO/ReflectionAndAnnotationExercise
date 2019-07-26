@@ -51,19 +51,21 @@ public class Engine implements Runnable {
 	// TODO: refactor for problem 4
 	private String interpretCommand(String[] data, String commandName) throws ExecutionControl.NotImplementedException {
 		String result;
-		switch (commandName) {
-			case "add":
-				result = this.addUnitCommand(data);
-				break;
-			case "report":
-				result = this.reportCommand(data);
-				break;
-			case "fight":
-				result = this.fightCommand(data);
-				break;
-			default:
-				throw new RuntimeException("Invalid command!");
-		}
+
+
+//		switch (commandName) {
+//			case "add":
+//				result = this.addUnitCommand(data);
+//				break;
+//			case "report":
+//				result = this.reportCommand(data);
+//				break;
+//			case "fight":
+//				result = this.fightCommand(data);
+//				break;
+//			default:
+//				throw new RuntimeException("Invalid command!");
+//		}
 		return result;
 	}
 
