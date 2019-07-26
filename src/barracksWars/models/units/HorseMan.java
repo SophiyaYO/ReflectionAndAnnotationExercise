@@ -1,7 +1,11 @@
 package barracksWars.models.units;
 
 public class HorseMan extends AbstractUnit {
-    public HorseMan(int health, int attackDamage) {
-        super(health, attackDamage);
+
+    private static final int HORSEMAN_HEALTH = 50;
+    private static final int HORSEMAN_DAMAGE = 10;
+
+    public HorseMan() {
+        super(HORSEMAN_HEALTH, HORSEMAN_DAMAGE);
     }
 }
