@@ -78,13 +78,4 @@ public class Engine implements Runnable {
 		return result;
 	}
 
-	private String reportCommand(String[] data) {
-		String output = this.repository.getStatistics();
-		return output;
-	}
-
-	
-	private String fightCommand(String[] data) {
-		return "fight";
-	}
 }
