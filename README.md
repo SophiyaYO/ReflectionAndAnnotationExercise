@@ -152,7 +152,8 @@ END |
 </details>
 
 <details>
-<summary>03. Black Box Integer</summary>
+<summary>03. BarracksWars - A New Factory</summary>
+
 
 You are given a small console based project called Barracks \(the code for it is included in the provided skeleton).
 
@@ -220,5 +221,22 @@ If you want the exact solution for this problem remove the unnecessary methods, 
  do it by yourself :kiss:**
 
 [:sos: **SOLUTION**](src/barracksWars/)
+
+</details>
+
+<details>
+<summary>04. BarracksWars - The Commands Strike Back</summary>
+
+As you might have noticed commands in the project from **Problem 3** are implemented via a switch case with method calls in the **Engine** class. Although this approach works it is flawed when you add a new command because you have to add a new case for it. In some projects you might not have access to the engine and this would not work. Imagine this project will be outsourced and the outsourcing firm will not have access to the engine. Make it so whenever they want to add a new command they won't have to change anything in the Engine.
+To do so employ the design pattern called [Command Pattern](https://www.baeldung.com/java-command-pattern). Here is how the base \(abstract) command should look like:
+
+![04](src/barracksWars/04.png)
+
+**:warning: the provided solution is implementing all the requirements from pr 03 to pr 05 including!
+If you want the exact solution for this problem remove the unnecessary methods, fields, constructors and so on,
+or go through the initial commits or just do it by yourself it is easy peasy and I am sure you will manage to 
+do it by yourself :kiss:**
+
+[:sos: **SOLUTION**](src/barracksWars)
 
 </details>
