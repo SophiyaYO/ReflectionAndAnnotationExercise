@@ -64,6 +64,8 @@ public class Engine implements Runnable {
                     clazz.getDeclaredConstructor(
                             String[].class, Repository.class, UnitFactory.class);
 
+            constructor.setAccessible(true);
+
             Executable executable = constructor.newInstance
                     (data, this.repository, this.unitFactory);
 
@@ -73,20 +75,6 @@ public class Engine implements Runnable {
             e.printStackTrace();
         }
 
-
-//		switch (commandName) {
-//			case "add":
-//				result = this.addUnitCommand(data);
-//				break;
-//			case "report":
-//				result = this.reportCommand(data);
-//				break;
-//			case "fight":
-//				result = this.fightCommand(data);
-//				break;
-//			default:
-//				throw new RuntimeException("Invalid command!");
-//		}
 		return result;
 	}
 
