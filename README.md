@@ -242,11 +242,7 @@ Once you've implemented the pattern add a new command. It will have the followin
 To implement this command, you will also have to implement a corresponding method in the UnitRepository.
 If you do everything correctly for this problem, **_you should write/refactor code only in the core and data packages._**
 
-
-**:warning: the provided solution is implementing all the requirements from pr 03 to pr 05 including!
-If you want the exact solution for this problem remove the unnecessary methods, fields, constructors and so on,
-or go through the initial commits or just do it by yourself it is easy peasy and I am sure you will manage to 
-do it by yourself :kiss:**
+**EXAMPLES**
 
 Input | Output
 --- | ---
@@ -271,6 +267,29 @@ fight | Archer -> 0
 | | Pikeman -> 2
 | | No such units in repository.
 | | No such units in repository.
+
+
+**:warning: the provided solution is implementing all the requirements from pr 03 to pr 05 including!
+If you want the exact solution for this problem remove the unnecessary methods, fields, constructors and so on,
+or go through the initial commits or just do it by yourself it is easy peasy and I am sure you will manage to 
+do it by yourself :kiss:**
+
+[:sos: **SOLUTION**](src/barracksWars)
+
+</details>
+
+<details>
+<summary>05.	* BarracksWars - Return of the Dependencies</summary>
+
+In the final part of this epic problem trilogy we will resolve the issue where all Commands received all utility classes as parameters in their constructors. We can accomplish this by using an approach called **dependency injection container**. This approach is used in many frameworks like **Spring** for instance.
+
+We will do a little twist on that approach. Remove all fields from the abstract command **except the data**. Instead put whatever fields each command needs in the concrete class. **Create an annotation** called **Inject** and make it so it can be used only on fields. Put the annotation over the fields we need to set trough reflection. Once you've prepared all of this, write the necessary reflection code in the **Command Interpreter** \(which you should have refactored out from the engine in Problem 4).
+Use the tests from Problem 4 to test your solution.
+
+**:warning: the provided solution is implementing all the requirements from pr 03 to pr 05 including!
+If you want the exact solution for this problem remove the unnecessary methods, fields, constructors and so on,
+or go through the initial commits or just do it by yourself it is easy peasy and I am sure you will manage to 
+do it by yourself :kiss:**
 
 [:sos: **SOLUTION**](src/barracksWars)
 
