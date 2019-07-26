@@ -6,6 +6,7 @@ import barracksWars.interfaces.Repository;
 import barracksWars.interfaces.UnitFactory;
 
 import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 
 public class CommandInterpreterImpl implements CommandInterpreter {
@@ -32,12 +33,14 @@ public class CommandInterpreterImpl implements CommandInterpreter {
 
             Constructor<? extends Executable> constructor =
                     clazz.getDeclaredConstructor(
-                            String[].class, Repository.class, UnitFactory.class);
+                            String[].class);
 
             constructor.setAccessible(true);
 
             executable = constructor.newInstance
-                    (data, this.repository, this.unitFactory);
+                    ((Object) data);
+
+            this.injectFields(executable);
 
         } catch (ClassNotFoundException
                 | NoSuchMethodException
@@ -49,5 +52,29 @@ public class CommandInterpreterImpl implements CommandInterpreter {
         }
 
         return executable;
+    }
+
+    private void injectFields(Executable executable) {
+
+        Field[] fields = executable.getClass().getDeclaredFields();
+
+        Field[] currentFields = this.getClass().getDeclaredFields();
+
+        for (Field field : fields) {
+
+            if (field.getAnnotations()[0].toString().contains("Inject")) {
+                for (Field currentField : currentFields) {
+                    if (currentField.getClass().equals(field.getClass())) {
+                        field.setAccessible(true);
+                        try {
+                            field.set(executable, currentField);
+                        } catch (IllegalAccessException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
