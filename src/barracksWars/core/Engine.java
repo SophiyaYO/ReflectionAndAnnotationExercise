@@ -1,10 +1,8 @@
 package barracksWars.core;
 
 
-import barracksWars.interfaces.Executable;
-import barracksWars.interfaces.Repository;
+import barracksWars.interfaces.*;
 import barracksWars.interfaces.Runnable;
-import barracksWars.interfaces.UnitFactory;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,43 +13,41 @@ import java.lang.reflect.InvocationTargetException;
 public class Engine implements Runnable {
     private static final String COMMANDS_PACKAGE_PATH = "barracksWars.core.commands.";
 
-	private Repository repository;
-	private UnitFactory unitFactory;
+    private CommandInterpreter commandInterpreter;
 
-	public Engine(Repository repository, UnitFactory unitFactory) {
-		this.repository = repository;
-		this.unitFactory = unitFactory;
-	}
+    public Engine(CommandInterpreter commandInterpreter) {
+        this.commandInterpreter = commandInterpreter;
+    }
 
-	@Override
-	public void run() {
-		BufferedReader reader = new BufferedReader(
-				new InputStreamReader(System.in));
+    @Override
+    public void run() {
+        BufferedReader reader = new BufferedReader(
+                new InputStreamReader(System.in));
 
-		while (true) {
-			try {
-				String input = reader.readLine();
-				String[] data = input.split("\\s+");
-				String commandName = data[0];
-				String result = interpretCommand(data, commandName);
+        while (true) {
+            try {
+                String input = reader.readLine();
+                String[] data = input.split("\\s+");
+                String commandName = data[0];
+                String result = interpretCommand(data, commandName);
 
-				if (result.equals("fight")) {
-					break;
-				}
+                if (result.equals("fight")) {
+                    break;
+                }
 
-				System.out.println(result);
+                System.out.println(result);
 
-			} catch (RuntimeException e) {
-				System.out.println(e.getMessage());
+            } catch (RuntimeException e) {
+                System.out.println(e.getMessage());
 
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
-	}
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 
-	private String interpretCommand(String[] data, String commandName) {
-		String result = "Invalid Command!";
+    private String interpretCommand(String[] data, String commandName) {
+        String result = "Invalid Command!";
 
         commandName = Character.toUpperCase(commandName.charAt(0)) +
                 commandName.substring(1);
@@ -75,7 +71,7 @@ public class Engine implements Runnable {
             e.printStackTrace();
         }
 
-		return result;
-	}
+        return result;
+    }
 
 }
