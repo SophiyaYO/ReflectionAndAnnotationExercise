@@ -29,7 +29,9 @@ public class Engine implements Runnable {
                 String input = reader.readLine();
                 String[] data = input.split("\\s+");
                 String commandName = data[0];
-                String result = interpretCommand(data, commandName);
+                String result = this.commandInterpreter
+                        .interpretCommand(data, commandName)
+                        .execute();
 
                 if (result.equals("fight")) {
                     break;
