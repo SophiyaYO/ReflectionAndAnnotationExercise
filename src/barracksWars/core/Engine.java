@@ -2,16 +2,14 @@ package barracksWars.core;
 
 import barracksWars.interfaces.Repository;
 import barracksWars.interfaces.Runnable;
-import barracksWars.interfaces.Unit;
 import barracksWars.interfaces.UnitFactory;
-import jdk.jshell.spi.ExecutionControl;
-
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Engine implements Runnable {
+    private static final String COMMANDS_PACKAGE_PATH = "barracksWars.core.commands.";
 
 	private Repository repository;
 	private UnitFactory unitFactory;
@@ -50,6 +48,7 @@ public class Engine implements Runnable {
 
 	private String interpretCommand(String[] data, String commandName) {
 		String result;
+
 
 
 
