@@ -72,7 +72,7 @@ public class CommandInterpreterImpl implements CommandInterpreter {
 
                         try {
 
-                            field.set(executable, currentField);
+                            field.set(executable, currentField.get(this));
 
                         } catch (IllegalAccessException e) {
                             e.printStackTrace();
