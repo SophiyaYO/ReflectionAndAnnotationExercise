@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="347ba584-a0d3-4a3d-b43d-7aad37a9f49d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/barracksWars/core/commands/Report.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="347ba584-a0d3-4a3d-b43d-7aad37a9f49d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/barracksWars/core/Engine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1081">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="453">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -26,7 +23,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/barracksWars/core/commands/Fight.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#116#117#0" expanded="true" />
+                <element signature="e#143#144#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/barracksWars/core/commands/Report.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="279">
@@ -151,8 +162,9 @@
         <option value="$PROJECT_DIR$/src/barracksWars/core/factories/UnitFactoryImpl.java" />
         <option value="$PROJECT_DIR$/src/barracksWars/interfaces/UnitFactory.java" />
         <option value="$PROJECT_DIR$/src/barracksWars/core/commands/Add.java" />
-        <option value="$PROJECT_DIR$/src/barracksWars/core/Engine.java" />
         <option value="$PROJECT_DIR$/src/barracksWars/core/commands/Report.java" />
+        <option value="$PROJECT_DIR$/src/barracksWars/core/commands/Fight.java" />
+        <option value="$PROJECT_DIR$/src/barracksWars/core/Engine.java" />
       </list>
     </option>
   </component>
@@ -320,7 +332,7 @@
       <option name="presentableId" value="Default" />
       <updated>1564060544759</updated>
       <workItem from="1564060546179" duration="12692000" />
-      <workItem from="1564125261226" duration="8699000" />
+      <workItem from="1564125261226" duration="8962000" />
     </task>
     <task id="LOCAL-00001" summary="switch added">
       <created>1564075229243</created>
@@ -518,11 +530,39 @@
       <option name="project" value="LOCAL" />
       <updated>1564140399017</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="added Report with implementations">
+      <created>1564140522588</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1564140522588</updated>
+    </task>
+    <task id="LOCAL-00030" summary="poop cleaned">
+      <created>1564140637668</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1564140637668</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Fight added">
+      <created>1564140670408</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1564140670408</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fight() and report() removed">
+      <created>1564140763650</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1564140763650</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21391000" />
+    <option name="totallyTimeSpent" value="21654000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="762" y="0" width="781" height="870" extended-state="0" />
@@ -535,7 +575,7 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286517" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286517" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3988764" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -559,10 +599,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added private &amp; protected cases" />
-    <MESSAGE value="added public &amp; all cases" />
-    <MESSAGE value="added" />
-    <MESSAGE value="little fix" />
     <MESSAGE value="initial commit with some code in" />
     <MESSAGE value="fixes" />
     <MESSAGE value="all added" />
@@ -584,7 +620,11 @@
     <MESSAGE value="some exceptions cleared" />
     <MESSAGE value="path constant added" />
     <MESSAGE value="interpretCommand() with new implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="interpretCommand() with new implementation" />
+    <MESSAGE value="added Report with implementations" />
+    <MESSAGE value="poop cleaned" />
+    <MESSAGE value="Fight added" />
+    <MESSAGE value="fight() and report() removed" />
+    <option name="LAST_COMMIT_MESSAGE" value="fight() and report() removed" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/OpenSSH_5.6p1" />
@@ -794,16 +834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/barracksWars/core/Engine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1081">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/barracksWars/core/commands/Report.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
@@ -812,6 +842,28 @@
             <element signature="imports" expanded="true" />
             <element signature="e#117#118#0" expanded="true" />
             <element signature="e#144#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/barracksWars/core/commands/Fight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#116#117#0" expanded="true" />
+            <element signature="e#143#144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/barracksWars/core/Engine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
