@@ -232,10 +232,45 @@ To do so employ the design pattern called [Command Pattern](https://www.baeldung
 
 ![04](src/barracksWars/04.png)
 
+Notice how all **commands that extend this one will have both a Repository and a UnitFactory** although not all of them need these. Leave it like this for this problem, because for the reflection to work **we need all constructors to accept the same parameters**. We will see how to go around this issue in Problem 5.
+
+Once you've implemented the pattern add a new command. It will have the following syntax:
+-	**retire** \<UnitType> - All it has to do is remove a unit of the provided type from the repository.
+        -	If there are no such units currently in the repository **print: "No such units in repository."**
+        -	If there is such a unit currently in the repository, **print: "\<UnitType> retired!"**
+
+To implement this command, you will also have to implement a corresponding method in the UnitRepository.
+If you do everything correctly for this problem, **_you should write/refactor code only in the core and data packages._**
+
+
 **:warning: the provided solution is implementing all the requirements from pr 03 to pr 05 including!
 If you want the exact solution for this problem remove the unnecessary methods, fields, constructors and so on,
 or go through the initial commits or just do it by yourself it is easy peasy and I am sure you will manage to 
 do it by yourself :kiss:**
+
+Input | Output
+--- | ---
+retire Archer | No such units in repository.
+add Pikeman | Pikeman added!
+add Pikeman | Pikeman added!
+add Gunner | Gunner added!
+add Horseman | Horseman added!
+add Archer | Archer added!
+add Gunner | Gunner added!
+add Gunner | Gunner added!
+add Horseman | Horseman added!
+report | Archer -> 1
+retire Gunner | Gunner -> 3
+retire Archer | Horseman -> 2
+report | Pikeman -> 2
+retire Swordsman | Gunner retired!
+retire Archer | Archer retired!
+fight | Archer -> 0
+| | Gunner -> 2
+| | Horseman -> 2
+| | Pikeman -> 2
+| | No such units in repository.
+| | No such units in repository.
 
 [:sos: **SOLUTION**](src/barracksWars)
 

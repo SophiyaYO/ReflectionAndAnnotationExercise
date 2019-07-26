@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="347ba584-a0d3-4a3d-b43d-7aad37a9f49d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/barracksWars/04.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -18,8 +19,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="138">
-                <caret line="230" column="61" selection-start-line="230" selection-start-column="61" selection-end-line="230" selection-end-column="61" />
+              <first_editor relative-caret-position="278">
+                <caret line="250" lean-forward="true" selection-start-line="250" selection-end-line="250" />
               </first_editor>
               <second_editor />
             </state>
@@ -66,7 +67,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="952" />
     <option name="width" value="978" />
     <option name="height" value="1089" />
@@ -245,14 +246,7 @@
       <option name="presentableId" value="Default" />
       <updated>1564060544759</updated>
       <workItem from="1564060546179" duration="12692000" />
-      <workItem from="1564125261226" duration="17042000" />
-    </task>
-    <task id="LOCAL-00008" summary="initial commit with some code in">
-      <created>1564080647121</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1564080647121</updated>
+      <workItem from="1564125261226" duration="17360000" />
     </task>
     <task id="LOCAL-00009" summary="fixes">
       <created>1564080795723</created>
@@ -590,14 +584,21 @@
       <option name="project" value="LOCAL" />
       <updated>1564148738880</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="pr 04 added">
+      <created>1564151211461</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1564151211461</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29734000" />
+    <option name="totallyTimeSpent" value="30052000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="762" y="0" width="782" height="871" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.33841887" />
@@ -616,7 +617,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006935" side_tool="true" weight="0.3286517" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="11" sideWeight="0.49930653" visible="true" weight="0.325" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="11" sideWeight="0.49930653" visible="true" weight="0.32819074" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -631,7 +632,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="interpretCommand() with new implementation" />
     <MESSAGE value="added Report with implementations" />
     <MESSAGE value="poop cleaned" />
     <MESSAGE value="Fight added" />
@@ -656,7 +656,8 @@
     <MESSAGE value="refactoring" />
     <MESSAGE value="final fix" />
     <MESSAGE value="pr 03 added" />
-    <option name="LAST_COMMIT_MESSAGE" value="pr 03 added" />
+    <MESSAGE value="pr 04 added" />
+    <option name="LAST_COMMIT_MESSAGE" value="pr 04 added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/OpenSSH_5.6p1" />
@@ -936,8 +937,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="138">
-            <caret line="230" column="61" selection-start-line="230" selection-start-column="61" selection-end-line="230" selection-end-column="61" />
+          <first_editor relative-caret-position="278">
+            <caret line="250" lean-forward="true" selection-start-line="250" selection-end-line="250" />
           </first_editor>
           <second_editor />
         </state>
