@@ -44,13 +44,13 @@ public class UnitRepository implements Repository {
     }
 
     public void removeUnit(String unitType){
-        if (this.amountOfUnits.containsKey(unitType)) {
+        if (!this.amountOfUnits.containsKey(unitType) || this.amountOfUnits.get(unitType) == 0) {
             throw new IllegalArgumentException("No such units in repository.");
         }
 
         int oldCount = this.amountOfUnits.get(unitType) - 1;
 
-        if (oldCount == 0) {
+        if (oldCount == -1) {
             this.amountOfUnits.remove(unitType);
         } else {
             this.amountOfUnits.put(unitType, oldCount);

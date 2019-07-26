@@ -11,6 +11,6 @@ public class Fight extends Command {
 
     @Override
     public String execute() {
-        return null;
+        return "fight";
     }
 }

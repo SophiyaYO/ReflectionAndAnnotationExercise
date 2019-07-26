@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="347ba584-a0d3-4a3d-b43d-7aad37a9f49d" name="Default Changelist" comment="fight() and report() removed">
-      <change afterPath="$PROJECT_DIR$/src/barracksWars/core/commands/Retire.java" afterDir="false" />
+    <list default="true" id="347ba584-a0d3-4a3d-b43d-7aad37a9f49d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/barracksWars/data/UnitRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/barracksWars/data/UnitRepository.java" afterDir="false" />
     </list>
@@ -27,10 +26,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/barracksWars/core/commands/Retire.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
+            <state relative-caret-position="328">
               <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -85,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/barracksWars/data/UnitRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="47" column="79" selection-start-line="47" selection-start-column="79" selection-end-line="47" selection-end-column="79" />
+            <state relative-caret-position="283">
+              <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,8 +158,8 @@
         <option value="$PROJECT_DIR$/src/barracksWars/core/commands/Fight.java" />
         <option value="$PROJECT_DIR$/src/barracksWars/core/Engine.java" />
         <option value="$PROJECT_DIR$/src/barracksWars/interfaces/Repository.java" />
-        <option value="$PROJECT_DIR$/src/barracksWars/data/UnitRepository.java" />
         <option value="$PROJECT_DIR$/src/barracksWars/core/commands/Retire.java" />
+        <option value="$PROJECT_DIR$/src/barracksWars/data/UnitRepository.java" />
       </list>
     </option>
   </component>
@@ -328,7 +327,7 @@
       <option name="presentableId" value="Default" />
       <updated>1564060544759</updated>
       <workItem from="1564060546179" duration="12692000" />
-      <workItem from="1564125261226" duration="9597000" />
+      <workItem from="1564125261226" duration="10127000" />
     </task>
     <task id="LOCAL-00001" summary="switch added">
       <created>1564075229243</created>
@@ -561,11 +560,32 @@
       <option name="project" value="LOCAL" />
       <updated>1564140969667</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary=" class Retire created and execute() implemented">
+      <created>1564141428468</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1564141428468</updated>
+    </task>
+    <task id="LOCAL-00035" summary="check for existence added to removeUnit()">
+      <created>1564141507415</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1564141507415</updated>
+    </task>
+    <task id="LOCAL-00036" summary="implementations for remove unit added to removeUnit()">
+      <created>1564141658150</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1564141658150</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22289000" />
+    <option name="totallyTimeSpent" value="22819000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="762" y="0" width="781" height="870" extended-state="0" />
@@ -578,7 +598,7 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286517" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25983146" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3988764" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -602,9 +622,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initial commit with some code in" />
-    <MESSAGE value="fixes" />
-    <MESSAGE value="all added" />
     <MESSAGE value="PR02 ADDED" />
     <MESSAGE value="reformatting" />
     <MESSAGE value="implementation added to createUnit()" />
@@ -627,7 +644,10 @@
     <MESSAGE value="Fight added" />
     <MESSAGE value="fight() and report() removed" />
     <MESSAGE value="throws ExecutionControl.NotImplementedException removed" />
-    <option name="LAST_COMMIT_MESSAGE" value="throws ExecutionControl.NotImplementedException removed" />
+    <MESSAGE value=" class Retire created and execute() implemented" />
+    <MESSAGE value="check for existence added to removeUnit()" />
+    <MESSAGE value="implementations for remove unit added to removeUnit()" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementations for remove unit added to removeUnit()" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/OpenSSH_5.6p1" />
@@ -847,13 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/barracksWars/interfaces/UnitFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/barracksWars/interfaces/Repository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -861,20 +874,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/barracksWars/data/UnitRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/barracksWars/interfaces/UnitFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="47" column="79" selection-start-line="47" selection-start-column="79" selection-end-line="47" selection-end-column="79" />
+        <state relative-caret-position="92">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/barracksWars/core/commands/Retire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/barracksWars/core/commands/Retire.java">
+    <entry file="file://$PROJECT_DIR$/src/barracksWars/data/UnitRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        <state relative-caret-position="283">
+          <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
