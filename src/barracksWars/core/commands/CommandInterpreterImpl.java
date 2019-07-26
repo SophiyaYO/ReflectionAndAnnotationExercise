@@ -63,11 +63,17 @@ public class CommandInterpreterImpl implements CommandInterpreter {
         for (Field field : fields) {
 
             if (field.getAnnotations()[0].toString().contains("Inject")) {
+
                 for (Field currentField : currentFields) {
-                    if (currentField.getClass().equals(field.getClass())) {
+
+                    if (currentField.getType().equals(field.getType())) {
+
                         field.setAccessible(true);
+
                         try {
+
                             field.set(executable, currentField);
+
                         } catch (IllegalAccessException e) {
                             e.printStackTrace();
                         }
