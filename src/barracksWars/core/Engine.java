@@ -42,15 +42,15 @@ public class Engine implements Runnable {
 			} catch (RuntimeException e) {
 				System.out.println(e.getMessage());
 
-			} catch (IOException | ExecutionControl.NotImplementedException e) {
+			} catch (IOException e) {
 				e.printStackTrace();
 			}
 		}
 	}
 
-	// TODO: refactor for problem 4
-	private String interpretCommand(String[] data, String commandName) throws ExecutionControl.NotImplementedException {
+	private String interpretCommand(String[] data, String commandName) {
 		String result;
+
 
 
 //		switch (commandName) {
