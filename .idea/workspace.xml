@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="347ba584-a0d3-4a3d-b43d-7aad37a9f49d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/barracksWars/core/factories/UnitFactoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/barracksWars/core/factories/UnitFactoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/barracksWars/models/units/HorseMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/barracksWars/models/units/HorseMan.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,15 +31,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/barracksWars/core/factories/UnitFactoryImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state relative-caret-position="139">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#251#281#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/barracksWars/models/units/HorseMan.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+              <folding>
+                <element signature="e#134#135#0" expanded="true" />
+                <element signature="e#177#178#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/barracksWars/models/units/Pikeman.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="49" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -64,6 +86,13 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -79,6 +108,7 @@
         <option value="$PROJECT_DIR$/src/barracksWars/data/UnitRepository.java" />
         <option value="$PROJECT_DIR$/src/barracksWars/core/Engine.java" />
         <option value="$PROJECT_DIR$/src/barracksWars/core/factories/UnitFactoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/barracksWars/models/units/HorseMan.java" />
       </list>
     </option>
   </component>
@@ -246,7 +276,7 @@
       <option name="presentableId" value="Default" />
       <updated>1564060544759</updated>
       <workItem from="1564060546179" duration="12692000" />
-      <workItem from="1564125261226" duration="4976000" />
+      <workItem from="1564125261226" duration="5218000" />
     </task>
     <task id="LOCAL-00001" summary="switch added">
       <created>1564075229243</created>
@@ -332,11 +362,25 @@
       <option name="project" value="LOCAL" />
       <updated>1564134737563</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="implementation added to createUnit()">
+      <created>1564135391054</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1564135391054</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added HorseMan">
+      <created>1564135533733</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1564135533733</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17668000" />
+    <option name="totallyTimeSpent" value="17910000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="762" y="0" width="781" height="870" extended-state="0" />
@@ -349,7 +393,7 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286517" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286517" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3988764" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -383,7 +427,9 @@
     <MESSAGE value="all added" />
     <MESSAGE value="PR02 ADDED" />
     <MESSAGE value="reformatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="reformatting" />
+    <MESSAGE value="implementation added to createUnit()" />
+    <MESSAGE value="added HorseMan" />
+    <option name="LAST_COMMIT_MESSAGE" value="added HorseMan" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/OpenSSH_5.6p1" />
@@ -499,13 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/barracksWars/models/units/Pikeman.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/barracksWars/models/units/Swordsman.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -541,13 +580,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/jdk/internal/loader/BuiltinClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="582" selection-start-line="582" selection-end-line="582" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/barracksWars/core/factories/UnitFactoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="139">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#251#281#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/barracksWars/models/units/Pikeman.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="49" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/barracksWars/models/units/HorseMan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+          <folding>
+            <element signature="e#134#135#0" expanded="true" />
+            <element signature="e#177#178#0" expanded="true" />
           </folding>
         </state>
       </provider>
