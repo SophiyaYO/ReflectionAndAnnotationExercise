@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Engine implements Runnable {
-    private static final String COMMANDS_PACKAGE_PATH = "barracksWars.core.commands.";
 
     private CommandInterpreter commandInterpreter;
 
