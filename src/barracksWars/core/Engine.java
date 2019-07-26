@@ -74,13 +74,6 @@ public class Engine implements Runnable {
 		return output;
 	}
 
-	private String addUnitCommand(String[] data) throws ExecutionControl.NotImplementedException {
-		String unitType = data[1];
-		Unit unitToAdd = this.unitFactory.createUnit(unitType);
-		this.repository.addUnit(unitToAdd);
-		String output = unitType + " added!";
-		return output;
-	}
 	
 	private String fightCommand(String[] data) {
 		return "fight";
