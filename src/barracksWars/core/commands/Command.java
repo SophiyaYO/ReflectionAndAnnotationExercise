@@ -2,7 +2,6 @@ package barracksWars.core.commands;
 
 import barracksWars.interfaces.Executable;
 import barracksWars.interfaces.Repository;
-import barracksWars.interfaces.Unit;
 import barracksWars.interfaces.UnitFactory;
 
 public abstract class Command implements Executable {
@@ -10,7 +9,7 @@ public abstract class Command implements Executable {
    private Repository repository;
    private UnitFactory unitFactory;
 
-    protected Command(String[] data, Repository repository, UnitFactory unitFactory) {
+    public Command(String[] data, Repository repository, UnitFactory unitFactory) {
         this.data = data;
         this.repository = repository;
         this.unitFactory = unitFactory;
